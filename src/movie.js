@@ -1,11 +1,11 @@
 function getMovieDetails() {
-  let url = new URL(location.href);
-  let params = new URLSearchParams(url.search);
+  const url = new URL(location.href);
+  const params = new URLSearchParams(url.search);
 
-  let domain = "https://www.omdbapi.com";
-  let results = [];
+  const domain = "https://www.omdbapi.com";
+  const results = [];
 
-  let query = `apikey=${app.apiKey}&i=${params.get("id")}`;
+  const query = `apikey=${app.apiKey}&i=${params.get("id")}`;
 
   var xhttp = new XMLHttpRequest();
 

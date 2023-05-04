@@ -1,9 +1,9 @@
 function searchMovie() {
-  let domain = "https://www.omdbapi.com";
-  let results = [];
+  const domain = "https://www.omdbapi.com";
+  const results = [];
 
-  let movieTitle = document.querySelector(".movie-title-input").value;
-  let query = `apikey=${app.apiKey}&s=${movieTitle}`;
+  const movieTitle = document.querySelector(".movie-title-input").value;
+  const query = `apikey=${app.apiKey}&s=${movieTitle}`;
 
   var xhttp = new XMLHttpRequest();
 
